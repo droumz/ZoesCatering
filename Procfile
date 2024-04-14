@@ -1,0 +1,1 @@
+web: gunicorn zoescatering.wsgi

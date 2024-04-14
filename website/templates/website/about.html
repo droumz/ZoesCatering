@@ -1,0 +1,24 @@
+{% extends 'website/layout.html' %}
+
+
+{% block content %}
+<style>
+	#about {
+        background-color: #f0f0f0;
+        padding: 20px;
+        border: 1px solid #ccc;
+	}
+    #about p {
+        font-size:20px;
+    }
+</style>
+
+ <h1>About Us</h1>
+<br>
+    <div id="about">
+        <p>Welcome to Zoe's Catering! We specialize in providing high-quality catering services to our customers.</p>
+        <p>We pride ourselves on our commitment to excellence and our dedication to customer satisfaction!</p>
+        <p>Thank you for your consideration. We look forward to serving you!</p>
+        <p>Please <a href="{% url 'contact' %}">contact us here</a> for any inquiries or orders. Additionally, see if we <a href="{% url 'location' %}">service your area</a>!</p>
+    </div>
+{% endblock %}
